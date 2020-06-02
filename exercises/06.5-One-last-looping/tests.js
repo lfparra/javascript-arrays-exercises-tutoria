@@ -4,8 +4,8 @@ let _log = console.log;
 let _buffer = '';
 global.console.log = console.log = jest.fn((text) => _buffer += text + "\n");
 
-let reverse = Array.prototype.reverse;
-Array.prototype.reverse = jest.fn(function(){ return this; });
+// let reverse = Array.prototype.reverse;
+// Array.prototype.reverse = jest.fn(function(){ return this; });
 
 it('Call the console.log function as many times as items in the array', function () {
     const app = require('./app.js');

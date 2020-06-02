@@ -1,6 +1,18 @@
-let par = "Lorem ipsum dolor sit amet consectetur adipiscing elit Curabitur eget bibendum turpis Curabitur scelerisque eros ultricies venenatis mi at tempor nisl Integer tincidunt accumsan cursus"
+let par = "Hello World"
+
+let newPar = par.toLowerCase();
+
 let counts = {};
 
-// your code here
+for(let i = 0; i < newPar.length; i++) {
+    if (newPar[i] === " ") continue;
+    if (counts.hasOwnProperty(newPar[i])) {
+        counts[newPar[i]] += 1;
+    } else {
+        counts[newPar[i]] = 1;
+    }
+}
 
 console.log(counts);
+
+

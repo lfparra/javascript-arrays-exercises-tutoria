@@ -2,6 +2,7 @@ let mySampleArray = ['Esmeralda','Kiko','Ruth','Lebron','Pedro','Maria','Lou','F
 
 //your code here
 let inverted = [];
-for(let i = variable.length-1; i>=0;i--){
-    console.log(variable[i]);
+for ( let i = mySampleArray.length-1 ; i >=0 ; i-- ){
+    console.log(mySampleArray[i]);
 }
+

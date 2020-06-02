@@ -1,8 +1,13 @@
 var people = ['juan','ana','michelle','daniella','stefany','lucy','barak'];
 
-function deletePerson(personName)
-{
-	//your code here
+function deletePerson(personName){
+let array = [];
+  for (let i=0; i<people.length; i++){
+    if (people[i] !== personName){
+      array.push(people[i]);
+    } 
+  }
+	return array;
 }
 
 console.log(deletePerson('daniella'));
